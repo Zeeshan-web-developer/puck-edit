@@ -15,6 +15,7 @@ export function Client({ path, data }: { path: string; data: Partial<Data> }) {
           body: JSON.stringify({ data, path }),
         });
       }}
+      
     />
   );
 }
