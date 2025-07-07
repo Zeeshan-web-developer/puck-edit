@@ -40,6 +40,13 @@ export const config: Config = {
         textAlign: "left",
       },
       render: ({ title, variant, color, fontSize, textAlign }) => {
+        console.log("Rendering HeadingBlock with props:", {
+          title,
+          variant,
+          color,
+          fontSize,
+          textAlign,
+        });
         const Tag = variant;
         return (
           <Tag style={{ color, fontSize, textAlign, margin: 0 }}>{title}</Tag>
